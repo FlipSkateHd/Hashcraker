@@ -15,7 +15,16 @@ def comparaHashes(hashes,alvo):
     for hash in hashes:
         if hash == alvo:
             print("Hash encontrado na wordlist: ", hash)
-    
-print(hashList())
+            return
+    print("Hash nao encontrado na wordlist: ")
+
 
 comparaHashes(hashes= hashList(),alvo= input("Digite a sua hash: "))
+
+
+## futura  melhoria:
+# def encontrar_palavra(wordlist, hash_alvo, tipo="sha256"):
+#    for palavra in wordlist:
+#        if gerar_hash(palavra, tipo) == hash_alvo:
+#            print(f"✅ Palavra encontrada: '{palavra}'")
+#            return
